@@ -12,18 +12,16 @@ nav a{margin:0 10px;text-decoration:none;color:#333}
     text-decoration:none;
     border-radius:10px;
     margin:10px;
-    color:white;
+    color:#fff !important;
     font-weight:bold;
 }
 
-/* Order Now Button */
-.hero .btn:first-of-type{
+.hero a:nth-child(3){
     background:#25D366;
     border:2px solid #25D366;
 }
 
-/* Instagram Button */
-.hero .btn:last-of-type{
+.hero a:nth-child(4){
     background:#E1306C;
     border:2px solid #E1306C;
 }
