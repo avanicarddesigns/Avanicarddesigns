@@ -23,7 +23,9 @@ nav a{margin:0 10px;text-decoration:none;color:#333}
     text-decoration:none;
     border-radius:10px;
     margin:10px;
-    color:#fff !important;
+    background:black;
+    color:white !important;
+    border:2px solid black;
     font-weight:bold;
 }
 
