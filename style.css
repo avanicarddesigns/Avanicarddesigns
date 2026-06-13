@@ -28,10 +28,11 @@ nav a{
 }
 
 .hero{
+.hero{
     background:
     linear-gradient(rgba(255,255,255,0.75),
     rgba(255,255,255,0.75)),
-    url("Floral-bg.jpg");
+    url("floral-bg.jpg");
 
     background-size:cover;
     background-position:center;
@@ -43,7 +44,6 @@ nav a{
 
     padding:50px;
 }
-
 .hero h1{
     font-size:48px;
     margin-bottom:10px;
