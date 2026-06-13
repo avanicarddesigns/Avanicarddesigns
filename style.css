@@ -3,8 +3,11 @@ body{margin:0;font-family:Arial,sans-serif}
 header{display:flex;justify-content:space-between;align-items:center;padding:10px 30px;background:#fff;position:sticky;top:0}
 .logo{width:70px;height:70px;border-radius:50%}
 nav a{margin:0 10px;text-decoration:none;color:#333}
-.hero{display:flex;justify-content:space-around;align-items:center;padding:60px;background:linear-gradient(135deg,#ff5ca8,#8f5cff,#4cc9c0)}
-.hero,.hero a{color:white}
+.hero{
+background:url("assets/floral-bg.jpg");
+background-size:cover;
+background-position:center;
+}
 .hero-logo{width:280px;border-radius:50%}
 .btn{
     display:inline-block;
