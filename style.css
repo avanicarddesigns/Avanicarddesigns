@@ -27,7 +27,7 @@ nav a{
     font-weight:bold;
 }
 
-.hero{
+/* HERO SECTION */
 .hero{
     background:
     linear-gradient(rgba(255,255,255,0.75),
@@ -44,6 +44,7 @@ nav a{
 
     padding:50px;
 }
+
 .hero h1{
     font-size:48px;
     margin-bottom:10px;
