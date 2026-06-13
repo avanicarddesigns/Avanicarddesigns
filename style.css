@@ -9,13 +9,7 @@ nav a{margin:0 10px;text-decoration:none;color:#333}
     rgba(255,255,255,0.7)),
     url("Assets/floral-bg.jpg");
 
-    background-size:cover;
-    background-position:center;
-    min-height:80vh;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:50px;
+
 }
 
 .hero-logo{
