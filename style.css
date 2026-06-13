@@ -29,20 +29,22 @@ nav a{
 
 /* HERO SECTION */
 .hero{
-    background:
-    linear-gradient(rgba(255,255,255,0.75),
-    rgba(255,255,255,0.75)),
-    url("floral-bg.jpg");
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.75),
+            rgba(255,255,255,0.75)
+        ),
+        url("./floral-bg.jpg");
 
-    background-size:cover;
-    background-position:center;
-    min-height:80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:50px;
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
 }
 
 .hero h1{
