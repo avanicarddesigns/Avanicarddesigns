@@ -1,648 +1,393 @@
-/* ==============================
-   RESET
-============================== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-    background: #fff;
-}
-
-
-/* ==============================
-   HEADER
-============================== */
-
-.header {
-    width: 100%;
-    background: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
-}
-
-.header-container {
-    max-width: 1250px;
-    margin: auto;
-    padding: 10px 25px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
-}
-
-.logo {
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #222;
-    font-size: 14px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #e83e79;
-}
-
-.header-buttons {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.instagram-icon {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #e83e79;
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: #e83e79;
-    text-decoration: none;
-    font-size: 22px;
-}
-
-.whatsapp-top {
-    background: #e83e79;
-    color: white;
-    padding: 11px 18px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-
-/* ==============================
-   HERO
-============================== */
-
-.hero {
-    min-height: 620px;
-
-    background-image:
-        linear-gradient(
-            rgba(255,255,255,0.72),
-            rgba(255,255,255,0.72)
-        ),
-        url("./floral-bg.jpg");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 50px;
-    padding: 70px 8%;
-}
-
-.hero-content {
-    max-width: 600px;
-}
-
-.welcome {
-    color: #e83e79;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 4px;
-    margin-bottom: 10px;
-}
-
-.hero h1 {
-    font-size: 80px;
-    line-height: 0.95;
-    color: #e83e79;
-    letter-spacing: 3px;
-    font-weight: 900;
-}
-
-.hero h2 {
-    font-size: 42px;
-    letter-spacing: 5px;
-    margin-top: 12px;
-    color: #222;
-}
-
-.hero-text {
-    font-size: 19px;
-    line-height: 1.6;
-    margin: 25px 0;
-    max-width: 500px;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
-.order-btn,
-.follow-btn {
-    display: inline-block;
-    padding: 14px 25px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.order-btn {
-    background: #000;
-    color: #fff;
-    border: 2px solid #000;
-}
-
-.follow-btn {
-    background: transparent;
-    color: #000;
-    border: 2px solid #000;
-}
-
-.order-btn:hover,
-.follow-btn:hover {
-    transform: translateY(-3px);
-}
-
-.hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-image img {
-    width: 430px;
-    height: 430px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.15);
-}
-
-
-/* ==============================
-   SECTION TITLE
-============================== */
-
-.section-title {
-    text-align: center;
-    margin-bottom: 45px;
-}
-
-.section-title span {
-    color: #e83e79;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 3px;
-}
-
-.section-title h2 {
-    font-size: 40px;
-    margin-top: 10px;
-}
-
-
-/* ==============================
-   SERVICES
-============================== */
-
-.services {
-    padding: 80px 8%;
-    background: #fff;
-}
-
-.service-grid {
-    max-width: 1200px;
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-}
-
-.service-card {
-    background: #fff;
-    border-radius: 18px;
-    padding: 35px 20px;
-    text-align: center;
-
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-
-    transition: 0.3s;
-}
-
-.service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.13);
-}
-
-.service-icon {
-    font-size: 42px;
-    margin-bottom: 18px;
-}
-
-.service-card h3 {
-    font-size: 19px;
-    margin-bottom: 8px;
-}
-
-.service-card p {
-    color: #777;
-    font-size: 15px;
-}
-
-
-/* ==============================
-   GALLERY
-============================== */
-
-.gallery {
-    padding: 80px 8%;
-    background: #fff6f9;
-    text-align: center;
-}
-
-.gallery-grid {
-    max-width: 1200px;
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.gallery-card {
-    background: #fff;
-    border-radius: 15px;
-    overflow: hidden;
-
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-
-.gallery-card img {
-    width: 100%;
-    height: 300px;
-    display: block;
-    object-fit: cover;
-    transition: 0.4s;
-}
-
-.gallery-card:hover img {
-    transform: scale(1.05);
-}
-
-.view-gallery {
-    display: inline-block;
-    margin-top: 35px;
-    padding: 13px 25px;
-
-    border: 2px solid #000;
-    border-radius: 25px;
-
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
-
-/* ==============================
-   WHY US
-============================== */
-
-.why-us {
-    padding: 70px 8%;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-
-    background: #fff;
-}
-
-.why-card {
-    text-align: center;
-    padding: 25px;
-}
-
-.why-card span {
-    font-size: 40px;
-}
-
-.why-card h3 {
-    margin: 15px 0 10px;
-    font-size: 19px;
-}
-
-.why-card p {
-    color: #777;
-    line-height: 1.5;
-}
-
-
-/* ==============================
-   CONTACT
-============================== */
-
-.contact {
-    text-align: center;
-    padding: 80px 20px;
-    background: #fce8f0;
-}
-
-.contact h2 {
-    font-size: 38px;
-    margin-bottom: 15px;
-}
-
-.contact p {
-    color: #666;
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.contact-btn {
-    display: inline-block;
-
-    padding: 15px 28px;
-
-    background: #000;
-    color: #fff;
-
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-
-/* ==============================
-   FOOTER
-============================== */
-
-footer {
-    background: #111827;
-    color: #fff;
-    padding: 50px 8% 20px;
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-
-    text-align: center;
-}
-
-.footer-content div {
-    line-height: 1.8;
-    color: #ddd;
-}
-
-.footer-content strong {
-    color: #fff;
-}
-
-.copyright {
-    text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.15);
-    margin-top: 40px;
-    padding-top: 20px;
-    color: #aaa;
-    font-size: 14px;
-}
-
-
-/* ==============================
-   TABLET
-============================== */
-
-@media (max-width: 1000px) {
-
-    .header-container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav {
-        order: 3;
-        width: 100%;
-        flex-wrap: wrap;
-    }
-
-    .hero {
-        padding: 60px 5%;
-    }
-
-    .hero h1 {
-        font-size: 60px;
-    }
-
-    .hero-image img {
-        width: 330px;
-        height: 330px;
-    }
-
-    .service-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .why-us {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-/* ==============================
-   MOBILE
-============================== */
-
-@media (max-width: 650px) {
-
-    .header-container {
-        padding: 10px 15px;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .logo {
-        width: 65px;
-        height: 65px;
-    }
-
-    nav {
-        gap: 12px;
-    }
-
-    nav a {
-        font-size: 11px;
-    }
-
-    .header-buttons {
-        display: none;
-    }
-
-
-    /* HERO */
-
-    .hero {
-        min-height: auto;
-        padding: 50px 20px;
-
-        flex-direction: column;
-        text-align: center;
-
-        gap: 35px;
-    }
-
-    .hero-image {
-        order: -1;
-    }
-
-    .hero-image img {
-        width: 260px;
-        height: 260px;
-    }
-
-    .welcome {
-        font-size: 14px;
-        letter-spacing: 3px;
-    }
-
-    .hero h1 {
-        font-size: 52px;
-    }
-
-    .hero h2 {
-        font-size: 27px;
-        letter-spacing: 3px;
-    }
-
-    .hero-text {
-        font-size: 16px;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    .order-btn,
-    .follow-btn {
-        padding: 12px 18px;
-        font-size: 13px;
-    }
-
-
-    /* SERVICES */
-
-    .services,
-    .gallery {
-        padding: 60px 20px;
-    }
-
-    .section-title h2 {
-        font-size: 30px;
-    }
-
-    .service-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-
-    /* GALLERY */
-
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-card img {
-        height: 350px;
-    }
-
-
-    /* WHY */
-
-    .why-us {
-        grid-template-columns: 1fr;
-        padding: 50px 20px;
-    }
-
-
-    /* CONTACT */
-
-    .contact {
-        padding: 60px 20px;
-    }
-
-    .contact h2 {
-        font-size: 28px;
-    }
-
-
-    /* FOOTER */
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-}
-
-
-/* ==============================
-   SMALL MOBILE
-============================== */
-
-@media (max-width: 400px) {
-
-    .hero-image img {
-        width: 220px;
-        height: 220px;
-    }
-
-    .hero h1 {
-        font-size: 44px;
-    }
-
-    .hero h2 {
-        font-size: 24px;
-    }
-
-    nav {
-        gap: 9px;
-    }
-
-    nav a {
-        font-size: 10px;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AVANI CARD DESIGNS</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <a href="#home">
+                <img src="logo.png"
+                     class="logo"
+                     alt="Avani Card Designs">
+            </a>
+
+            <nav>
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT US</a>
+                <a href="#services">SERVICES</a>
+                <a href="#gallery">GALLERY</a>
+                <a href="#pricing">PRICING</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+
+            <div class="header-buttons">
+
+                <a href="https://instagram.com/avani_card_designs"
+                   class="instagram-icon">
+                    ◎
+                </a>
+
+                <a href="https://wa.me/916382542750"
+                   class="whatsapp-top">
+                    💬 WhatsApp Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="welcome">WELCOME TO</p>
+
+            <h1>AVANI</h1>
+
+            <h2>CARD DESIGNS</h2>
+
+            <p class="hero-text">
+                We design beautiful invites for your
+                special moments.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="https://wa.me/916382542750"
+                   class="order-btn">
+                    💬 ORDER NOW
+                </a>
+
+                <a href="https://instagram.com/avani_card_designs"
+                   class="follow-btn">
+                    ◎ FOLLOW US
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="logo.png"
+                 alt="Avani Card Designs Logo">
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about">
+
+        <div class="section-title">
+
+            <span>ABOUT US</span>
+
+            <h2>Making Your Moments Special</h2>
+
+        </div>
+
+        <div class="about-content">
+
+            <p>
+                Welcome to Avani Card Designs!
+                We create beautiful and creative digital
+                invitations for your special moments.
+            </p>
+
+            <p>
+                From weddings and birthdays to housewarming
+                and naming ceremonies, we design invitations
+                that make your celebrations memorable.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section id="services" class="services">
+
+        <div class="section-title">
+
+            <span>OUR SERVICES</span>
+
+            <h2>What We Design</h2>
+
+        </div>
+
+        <div class="service-grid">
+
+            <div class="service-card">
+                <div class="service-icon">💍</div>
+                <h3>Wedding</h3>
+                <p>Invitations</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🎂</div>
+                <h3>Birthday</h3>
+                <p>Invitations</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🎬</div>
+                <h3>Animated Video</h3>
+                <p>Invitations</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💌</div>
+                <h3>Save The Date</h3>
+                <p>Cards</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">👣</div>
+                <h3>Naming Ceremony</h3>
+                <p>Invitations</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>Housewarming</h3>
+                <p>Invitations</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">✨</div>
+                <h3>Custom</h3>
+                <p>Designs</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">•••</div>
+                <h3>& More</h3>
+                <p>Designs</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section id="gallery" class="gallery">
+
+        <div class="section-title">
+
+            <span>OUR WORK</span>
+
+            <h2>Recent Creations</h2>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-card">
+                <img src="Assets/wedding.jpg"
+                     alt="Wedding Invitation">
+            </div>
+
+            <div class="gallery-card">
+                <img src="Assets/birthday.jpg"
+                     alt="Birthday Invitation">
+            </div>
+
+            <div class="gallery-card">
+                <img src="Assets/save-date.jpg"
+                     alt="Save The Date">
+            </div>
+
+            <div class="gallery-card">
+                <img src="Assets/housewarming.jpg"
+                     alt="Housewarming Invitation">
+            </div>
+
+            <div class="gallery-card">
+                <img src="Assets/naming.jpg"
+                     alt="Naming Ceremony">
+            </div>
+
+        </div>
+
+        <a href="#gallery" class="view-gallery">
+            VIEW ALL GALLERY
+        </a>
+
+    </section>
+
+
+    <!-- ================= PRICING ================= -->
+
+    <section id="pricing" class="pricing">
+
+        <div class="section-title">
+
+            <span>OUR PRICING</span>
+
+            <h2>Simple & Affordable</h2>
+
+        </div>
+
+        <div class="pricing-grid">
+
+            <div class="price-card">
+                <h3>Digital Card</h3>
+                <p>Beautiful digital invitation</p>
+                <h2>Contact Us</h2>
+            </div>
+
+            <div class="price-card">
+                <h3>Animated Invitation</h3>
+                <p>Creative animated video invitation</p>
+                <h2>Contact Us</h2>
+            </div>
+
+            <div class="price-card">
+                <h3>Custom Design</h3>
+                <p>Unique design made for you</p>
+                <h2>Contact Us</h2>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHY CHOOSE US ================= -->
+
+    <section class="why-us">
+
+        <div class="why-card">
+
+            <span>🎨</span>
+
+            <h3>Creative Designs</h3>
+
+            <p>
+                Beautiful & unique invitation designs.
+            </p>
+
+        </div>
+
+        <div class="why-card">
+
+            <span>💰</span>
+
+            <h3>Affordable Pricing</h3>
+
+            <p>
+                Premium designs at affordable prices.
+            </p>
+
+        </div>
+
+        <div class="why-card">
+
+            <span>⚡</span>
+
+            <h3>Fast Delivery</h3>
+
+            <p>
+                Quick and reliable delivery.
+            </p>
+
+        </div>
+
+        <div class="why-card">
+
+            <span>♡</span>
+
+            <h3>100% Satisfaction</h3>
+
+            <p>
+                Your happiness is our priority.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <h2>Let's Create Something Beautiful</h2>
+
+        <p>
+            Have an idea for your special event?
+            Contact us today!
+        </p>
+
+        <a href="https://wa.me/916382542750"
+           class="contact-btn">
+            💬 Contact Us on WhatsApp
+        </a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                📞 Call / WhatsApp<br>
+                <strong>+91 6382542750</strong>
+            </div>
+
+            <div>
+                ◎ Instagram<br>
+                <strong>@avani_card_designs</strong>
+            </div>
+
+            <div>
+                ✉️ Email<br>
+                <strong>avanicarddesigns@gmail.com</strong>
+            </div>
+
+            <div>
+                📍 Location<br>
+                <strong>India</strong>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Avani Card Designs. All Rights Reserved.
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
